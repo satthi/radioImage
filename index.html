@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>radiocheck</title>
+        <script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.radioimage.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('body').radioimage({
+                  radioOnImage: './img/radio_on.png',
+                  radioOffImage: './img/radio_off.png',
+                  imageWidth: 20,
+                  imageHeight: 20
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <h1>radiocheck</h1>
+            <div>
+                <input id="check1_1" type="radio" value="1" name="check1"><label for="check1_1">test1_1</label>
+                <input id="check1_2" type="radio" value="2" name="check1"><label for="check1_2">test1_2</label>
+                <br />
+                <input id="check2_1" type="radio" value="1" name="check2"><label for="check2_1">test2_1</label>
+                <input id="check2_2" type="radio" value="2" name="check2" checked><label for="check2_2">test2_2</label>
+                
+            </div>
+        </div>
+
+
+    </body>
+</html>
